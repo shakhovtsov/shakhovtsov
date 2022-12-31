@@ -1,0 +1,88 @@
+
+
+.header {
+    margin-bottom: 9rem;
+    &::after {
+        content: '';
+        background: #415167;
+        height: 76.8rem;
+        width: 45vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }    
+    &__box {
+        height: 76.8rem;
+        display: flex;
+    }
+    &__logo {
+        width: 21.5%;
+        position: relative;
+        padding-top: 7rem;
+        padding-bottom: 6.5rem;
+        text-align: left;
+    }
+    &__title {
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: 5.4rem;
+        line-height: 7rem;
+        text-transform: uppercase;
+        color: #415167;
+        position: absolute;
+        left: 0;
+        bottom: 6.5rem;
+        &-bkg {
+            padding: 0 1.7rem;
+            color: #ffffff;
+            background: #C7A17A;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            position: relative;
+            left: -1.5rem;
+        }
+    } 
+    &__fon-video {
+        width: 57%;
+        & video {        
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }    
+    &__card {
+        display: inline-block;
+        margin-bottom: 11.8rem;       
+    }
+}
+
+.menu {
+    width: 22%;
+    padding-left: 5.5rem;
+    padding-top: 7rem;
+    background: #415167;
+    text-transform: uppercase;   
+    &__title-list {
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: #EDF0F5;
+        margin-bottom: 3rem;
+    }
+
+    &__item {
+        margin-bottom: 3rem;
+        list-style-type: none;
+    }
+    &__link {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #EDF0F5;
+    }
+}
+
+
+
+

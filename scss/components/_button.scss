@@ -1,0 +1,37 @@
+.btn-right {
+    width: 4.8rem;
+    height: 4.8rem;
+    background: #C7A17A;
+    border: 3px solid #C7A17A;
+    border-radius: 50%;
+    &:hover {
+        background: #F9F5E8;
+        & path {
+            fill: #C7A17A;
+        }
+    }
+    &__right {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.btn-buy {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none; 
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #F9FBFF;
+    background: #C7A17A;
+    padding: 6px 24px;
+    border-radius: 5rem;
+    &--gift {
+        padding: 8px 41px;        
+    }
+}
+

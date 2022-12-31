@@ -1,0 +1,50 @@
+.excursion {
+    &__box {
+        margin-bottom: 12.8rem;
+    }
+    &__subtitle {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-align: center;
+        color: #415167;
+        margin-bottom: 0.85rem;
+    }
+    &__title {
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: 3rem;
+        line-height: 3.4rem;
+        text-align: center;
+        color: #415167;
+        margin-bottom: 7.2rem;
+        text-transform: uppercase;
+    }
+    &__link {
+        justify-self: center;
+        width: 22.6rem;
+        padding-top: 1.7rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    &__img {
+        
+        margin-bottom: 4rem;
+    }
+    &__title-item {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        color: #232C38;
+        margin-bottom: 1.2rem;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        text-align: center;
+        color: #151D28;
+    }
+}

@@ -1,0 +1,23 @@
+// base
+@import
+"../scss/base/base";
+
+// layout
+@import
+"../scss/layout/combo",
+"../scss/layout/gift",
+"../scss/layout/choose",
+"../scss/layout/excursion",
+"../scss/layout/footer",
+"../scss/layout/header";
+
+// abstracts
+@import
+"../scss/abstracts/variables";
+
+// components
+@import
+"../scss/components/slider",
+"../scss/components/fonts",
+"../scss/components/button";
+

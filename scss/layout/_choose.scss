@@ -1,0 +1,33 @@
+.choose {   
+    &::after {
+        content: '';
+        background: #415167;
+        height: 89.5rem;
+        width: 32vw;
+        position: absolute;
+        top: 137rem;
+        left: 0;
+        z-index: -1;
+    }
+    &__content {     
+        height: 89.5rem;
+        position: relative;
+        padding-top: 8.8rem;
+        text-align: center;
+        
+    }
+    &__subtitle {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: #415167
+    }
+    &__title {
+        font-family: 'Montserrat';
+        font-weight: 900;
+        font-size: 3rem;
+        line-height: 3.4rem;
+        color: #415167;
+        margin-bottom: 7.2rem;
+    }
+}
