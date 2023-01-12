@@ -225,6 +225,7 @@ html {
 .gift__link {
   width: 88px;
   height: 33.3%;
+  border: none;
   background: #EDF0F5;
   position: relative;
 }
@@ -448,10 +449,13 @@ html {
   background: transparent;
 }
 .choose__slider-box {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   width: 100%;
   height: 54.4rem;
+}
+.choose__slider-box:first-child {
+  display: flex;
 }
 .choose__slider-item {
   width: 559px;
@@ -516,8 +520,11 @@ html {
 }
 .combo__slider-box {
   height: inherit;
-  display: flex;
+  display: none;
   justify-content: space-around;
+}
+.combo__slider-box:first-child {
+  display: flex;
 }
 .combo__slider-item {
   box-shadow: 0px 4px 24px rgba(205, 205, 205, 0.5);
