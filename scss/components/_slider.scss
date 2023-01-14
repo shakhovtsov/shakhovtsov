@@ -21,11 +21,12 @@
             margin-right: 25px;
         }
         &-link {
-            text-decoration: none;    
+            text-decoration: none;            
         }
         &-img { 
-            height: 100%;
-            width: 100%;
+            height: 25.6rem;
+            width: 23.6rem;
+            object-fit: cover;
          }
         &-content {
             padding: 4.2rem;
@@ -90,7 +91,7 @@
             background: #ffff;
         }
         &-link {
-            // width: inherit;
+            text-decoration: none;               
         }
         &-img {
             height: 30rem;
