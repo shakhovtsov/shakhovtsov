@@ -1,3 +1,4 @@
+
 .excursion {
     &__box {
         margin-bottom: 12.8rem;
@@ -11,14 +12,7 @@
         margin-bottom: 0.85rem;
     }
     &__title {
-        font-family: 'Montserrat';
-        font-weight: 900;
-        font-size: 3rem;
-        line-height: 3.4rem;
-        text-align: center;
-        color: #415167;
         margin-bottom: 7.2rem;
-        text-transform: uppercase;
     }
     &__link {
         justify-self: center;
@@ -32,11 +26,6 @@
         margin-bottom: 4rem;
     }
     &__title-item {
-        text-align: center;
-        font-weight: 700;
-        font-size: 2.4rem;
-        line-height: 2.8rem;
-        color: #232C38;
         margin-bottom: 1.2rem;
     }
     &__text {
@@ -47,4 +36,20 @@
         text-align: center;
         color: #151D28;
     }
+}
+@media (max-width: 1090px) {
+    .excursion {
+        margin-bottom: 5rem;
+        &__img {
+            margin-bottom: 2rem;
+        }
+        &__list {
+            grid-row-gap: 60px;
+        }
+        &__link {
+            grid-column: span 6;
+            
+        }
+    }
+    
 }

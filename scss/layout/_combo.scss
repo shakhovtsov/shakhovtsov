@@ -1,5 +1,5 @@
 .combo {
-    height: 888px;
+    // height: 888px;
     position: relative;
     padding-top: 88px;
     padding-bottom: 128px;
@@ -8,8 +8,8 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 30%;
-        height: inherit;
+        width: 35%;
+        height: 100%;
         background: #415167;
         z-index: -5;
     }    
@@ -32,4 +32,26 @@
         margin-bottom: 64px; 
     }
 
+}
+
+@media (max-width: 1190px) {
+    .combo {
+        &::after {
+            width: 30%;
+        }
+        padding-top: 30px;
+        padding-bottom: 68px;
+        &__title {
+            margin-bottom: 35px; 
+        }
+    
+    }
+}
+
+@media (max-width: 950px) {
+    .combo {
+        &::after {
+            width: 20%;
+        }
+    }
 }

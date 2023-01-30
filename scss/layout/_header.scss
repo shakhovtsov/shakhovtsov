@@ -50,18 +50,23 @@
             object-fit: cover;
         }
     }    
-    &__card {
-        display: inline-block;
-        margin-bottom: 11.8rem;       
-    }
+    
 }
 
 .menu {
     width: 22%;
-    padding-left: 5.5rem;
-    padding-top: 7rem;
+    height: inherit;
+    padding-left: 55px;
+    padding-top: 70px;
     background: #415167;
-    text-transform: uppercase;   
+    text-transform: uppercase;
+    &__btn {
+        display: none;
+    } 
+    &__card {
+        display: block;
+        margin-bottom: 11.8rem;       
+    }  
     &__title-list {
         font-weight: 700;
         font-size: 1.6rem;
@@ -83,6 +88,162 @@
     }
 }
 
+@media (max-width: 1090px) {
+    .header {
+        margin-bottom: 7rem;
+        &::after {
+            height: 56.8rem;
+        }
+        &__title {
+            font-size: 3.4rem;
+            line-height: 4rem;
+            bottom: 7.5rem;
+        }
+        &__box {
+            height: 56.8rem;
+        }
+    }
+    .menu {
+        padding-left: 20px;
+        padding-top: 60px;
+        &__item {
+            margin-bottom: 2rem;
+        }
+        &__link {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: #EDF0F5;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .header {
+        margin-bottom: 6rem;
+        &__logo {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        &__logo-img {
+            display: block;
+            width: 90px;
+            height: auto;
+        }
+        &__logo-img img{
+            width: 100%;
+            height: auto;
+        }
+        &__title {
+            transform: rotate(-90deg);
+            position: unset;
+
+        }
+    }
+    .menu {
+        padding: 60px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        &__card {
+            margin-bottom: 0; 
+                 
+        }
+        &__card-img {
+            width: 48px;
+        }
+        &__btn {
+            display: block;
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 50%;
+            background: #C7A17A;
+            position: relative;
+            top: 40px;
+        }
+        &__btn-span {
+            margin: 0 auto;
+            display: block;
+            width: 38px;
+            height: 1px;
+            padding: 0;
+            background: #ffffff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+        &__btn-span::after,
+        &__btn-span::before {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 1px;
+            background: #ffffff;
+            left: 12%;
+            transition: all .2s;
+        }
+        &__btn-span::before {
+            top: 10px; 
+        }
+        &__btn-span::after {
+            top: -10px;
+        }
+        &__nav {
+            display: none;
+            padding-top: 145px;
+            position: absolute;
+            background: #415167;
+            top: 0;
+            right: 23%;
+            width: 200px;
+            height: inherit;
+            text-align: center;
+        }
+    }
+    .active {
+        display: block;
+    }
+    .menu__btn-active .menu__btn-span::before {
+        transform: translate(-6px, -6px) rotate(35deg);
+        width: 13px;
+    }
+    .menu__btn-active .menu__btn-span::after {
+        transform: translate(-6px, 6px) rotate(-35deg);
+        width: 13px;
+    }      
+}
+
+@media (max-width: 576px) {
+    .header {
+        margin-bottom: 4rem;
+        &::after {
+            height: 40rem;
+        }
+        &__box {
+            height: 400px;
+        }
+        &__title {
+            font-size: 2.4rem;
+            line-height: 3rem;
+        }
+    }
+    .menu {
+        &__btn {
+            top: 0;
+        }
+        &__nav {
+            padding-top: 70px;
+        }
+    }
+}
 
 
 

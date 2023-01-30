@@ -1,18 +1,19 @@
-.choose {   
+.choose {
+    position: relative;   
     &::after {
         content: '';
-        background: #415167;
-        height: 89.5rem;
-        width: 32vw;
         position: absolute;
-        top: 137rem;
+        background: #415167;
+        height: 100%;
+        width: 32vw;
+        top: 0;
         left: 0;
         z-index: -1;
     }
     &__content {     
-        height: 89.5rem;
+        // height: 89.5rem;
         position: relative;
-        padding-top: 8.8rem;
+        padding-top: 5rem;
         text-align: center;
         
     }
@@ -28,6 +29,14 @@
         font-size: 3rem;
         line-height: 3.4rem;
         color: #415167;
-        margin-bottom: 7.2rem;
+        margin-bottom: 4rem;
     }
+}
+
+@media (max-width: 1090px) {
+    .choose {   
+        &::after {
+            left: -70px;
+        }
+    }    
 }

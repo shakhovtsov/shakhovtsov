@@ -22,3 +22,12 @@ btnChooseRight.onclick = function () {
     }
     chooseSliderBox[i].style.display = 'flex';
 }
+
+const menuBtnNav = document.querySelector('.menu__btn');
+let menuNav = document.querySelector('.menu__nav');
+
+menuBtnNav.onclick = function () {
+    menuNav.classList.toggle('active');
+    menuBtnNav.classList.toggle('menu__btn-active');
+}
+

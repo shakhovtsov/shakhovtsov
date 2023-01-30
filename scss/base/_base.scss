@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // border: 1px solid red;
 }
 
 html {
@@ -9,11 +10,19 @@ html {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     position: relative;
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.none {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .grid-row {

@@ -1,13 +1,13 @@
 .gift {
     padding: 86px 0 126px;
-    height: 800px;
     position: relative;
     &::before {
         content: '';
         position: absolute;
         top: 0;
-        width: 70%;
-        height: inherit;
+        left: 0;
+        width: 65%;
+        height: 100%;
         background: #EDF0F5;
         z-index: -5;
     }    
@@ -33,22 +33,22 @@
     }
     &__img {
         position: relative;
-        height: 463px;
+        // height: 463px;
         background: #ffffff;
         z-index: 2;
         &::before {
             content: '';
             position: absolute;
             width: 50%;
-            height: inherit;
+            height: 100%;
             background: #EDF0F5;
             z-index: -2;
         }
     }
     &__img-gift {
-        display: inline-block;
-        position: relative;
-        z-index: 1;
+        // display: inline-block;
+        // position: relative;
+        // z-index: 1;
     }
     &__content{
         padding: 65px 68px 64px;
@@ -102,9 +102,11 @@
         }
     }
     &__content-buy {
+        display: inline-block;
         margin-right: 125px;
     }
     &__content-more {
+        display: inline-block;
         text-decoration: none;
         font-weight: 700;
         font-size: 1.6rem;
@@ -114,11 +116,12 @@
     &__choice {
         display: flex;
         flex-direction: column;
-
+        justify-content: space-between;
     }
     &__link {
         width: 88px;
-        height: 33.3%;
+        height: 100%;
+        padding: 77px 40px;
         border: none;
         background: #EDF0F5;
         position: relative;
@@ -148,4 +151,38 @@
         }
     }
 
+}
+
+@media (max-width: 1090px) {
+    .gift {
+        padding: 25px 0 35px;
+        &__box {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__title {
+            margin-bottom: 3.6rem;
+        }
+        &__content {
+            padding: 35px 38px 34px;
+            align-self: center;
+        }
+        &__content-feature {
+            // display: block;
+            margin-bottom: 2rem;
+        }
+        &__content-buy {
+            margin-right: 80px;
+        }
+        &__choice {
+            display: flex;
+            flex-direction:row;
+        }
+        &__link {
+            width: 170px;
+            height: 100%;
+            padding: 40px 40px;
+        }    
+    }
 }
