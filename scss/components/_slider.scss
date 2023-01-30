@@ -160,6 +160,8 @@
 
 @media (max-width: 1190px) {
     .choose {
+        padding-top: 63px;
+        padding-bottom: 67px;
         &__slider-box {
             justify-content: center;
             gap: 15px;
@@ -302,14 +304,16 @@
 }
 @media (max-width: 620px) {
     .choose {
+        padding-top: 93px;
+        padding-bottom: 127px;
         &__slider {
             &__slider-box {
                 justify-content: center;
                 gap: 10px;
             }
             &-item {
-                width: 559px;
-                // width: 100%;
+                max-width: 559px;
+                width: 100%;
                 margin: 0;
                 display: flex;
                 
